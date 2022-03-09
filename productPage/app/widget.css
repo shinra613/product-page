@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+.app {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: ;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.product-container{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+.product-header{
+    width: 50%;
+    margin: auto;
+    text-align: start;
+}
+
+span{
+    color: blueviolet;
+}
+
+.product-container>div{
+    
+   
+}
+.product-container>div:hover{
+    color: blueviolet;
+    border-bottom : 5px solid;
+   
+}
