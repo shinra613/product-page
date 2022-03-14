@@ -4,20 +4,37 @@
 .app {
     font-family: 'Roboto', sans-serif;
     color: black;
-    background-color: ;
     margin: auto;
     text-align: center;
     width: 70%;
 }
 
+#section-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Product-section{
+    width:100%;
+    display: block;
+    
+}
+#Cart-section{
+    display: none;
+}
+
+#customer-section{
+    display: none;
+}
 .product-container{
     display: flex;
-    width: 50%;
+    width: 100%;
     margin: auto;
     justify-content: space-between;
 }
 .product-header{
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
     text-align: start;
 }
@@ -27,7 +44,7 @@ span{
 }
 
 .product-container>div{
-    
+    padding: 20px;
     border-bottom : 5px solid white;
    
 }
@@ -38,8 +55,10 @@ span{
 }
 
 #product-display{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
@@ -95,4 +114,90 @@ span{
     outline: none;
     padding-left: 15%;
    
+}
+
+#cart-container{
+   
+}
+
+.cart-card{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    border-bottom: 2px solid black;
+}
+
+.cart-card>img{
+    width: 70px;
+    max-width: 100%;
+}
+
+.cart-card>div{
+    width: 100px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.totaldiv{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.totaldiv>div{
+  padding: 40px;
+  max-width: 100%;
+}
+
+#Cart-holder{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 2rem;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#cart-container>button{
+    background-color: blueviolet;
+    border: none;
+    margin-top: 5%;
+    border-radius: 2rem;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+
+#tqnote-section{
+    display: none;
+    margin: auto;
+}
+
+#cart-container>button:visited{
+    color:white;
+    background-color: white;
+   }
+
+#customer-section>button{
+    background-color: blueviolet;
+    border: none;
+    margin-top: 5%;
+    border-radius: 2rem;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+
+#customer-section>div{
+    margin: 50px;
+}
+
+#customer-section>div>input{
+    height: 25px ;
+    border-radius: 2rem;
+    outline: none;
+    padding-left: 30px;
+}
+
+
+#customer-section {
+    margin: auto;
 }
