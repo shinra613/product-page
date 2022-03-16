@@ -167,14 +167,9 @@ const orderHandler = () => {
     const cartSec = document.getElementById('Cart-section');
     const tqSec = document.getElementById('tqnote-section');
 
-    customerSec.style.display = "none";
-    productSec.style.display = "none";
-    cartSec.style.display = "none";
-    tqSec.style.display = "block";
+    
 
 
-
-    console.log(cartData);
     
     let customerDetails = cartData.splice(cartData.length - 1, 1);
     let productlist = [];
@@ -214,6 +209,10 @@ const orderHandler = () => {
             ZOHO.CREATOR.API.addRecord(config).then(function (response) {
                 if (response.code == 3000) {
                     console.log("Record added successfully");
+                    customerSec.style.display = "none";
+                    productSec.style.display = "none";
+                    cartSec.style.display = "none";
+                    tqSec.style.display = "block";
                 } else { 
                     console.log(response);
                     console.log(formData);
